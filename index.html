@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shiny Black & White Glow</title>
+  <style>
+    /* General Reset */
+    body, html {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Arial', sans-serif;
+      background-color: #000;
+      color: #fff;
+    }
+
+    /* Header Styling */
+    header {
+      text-align: center;
+      padding: 20px;
+      background: linear-gradient(to bottom, #333, #000);
+    }
+
+    header h1 {
+      font-family: 'Cursive', sans-serif;
+      font-size: 2.5rem;
+      color: #fff;
+      text-shadow: 2px 2px 5px rgba(255, 255, 255, 1);
+    }
+
+    /* Main Content */
+    .media-container {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+    }
+
+    .media-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* Two columns per row */
+      gap: 20px;
+    }
+
+    .media-item {
+      position: relative;
+      text-align: center;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .media-item:hover {
+      transform: scale(1.05);
+    }
+
+    .media-item p {
+      margin-top: 10px;
+      font-size: 1rem;
+      color: rgba(255, 255, 255, 0.9);
+    }
+
+    /* Glow Animation */
+    .media-item::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+      background: linear-gradient(90deg, 
+        rgba(0, 0, 0, 0.7), 
+        rgba(255, 255, 255, 0.7), 
+        rgba(0, 0, 0, 0.7), 
+        rgba(255, 255, 255, 0.7)
+      );
+      background-size: 400% 400%;
+      z-index: -1;
+      filter: blur(15px);
+      animation: glow 6s infinite;
+    }
+
+    @keyframes glow {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    /* Video Styling */
+    video {
+      width: 100%;
+      height: auto;
+      border: 3px solid transparent;
+      border-radius: 10px;
+    }
+
+    /* Image Styling */
+    img {
+      width: 100%;
+      height: auto;
+      border: 3px solid transparent;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Shiny Black & White Glow Showcase</h1>
+  </header>
+  <main>
+    <section class="media-container">
+      <!-- Videos -->
+      <div class="media-grid">
+        <div class="media-item">
+          <video src="video1.mp4" controls></video>
+          <p>Caption for Video 1</p>
+        </div>
+        <div class="media-item">
+          <video src="video2.mp4" controls></video>
+          <p>Caption for Video 2</p>
+        </div>
+        <div class="media-item">
+          <video src="video3.mp4" controls></video>
+          <p>Caption for Video 1</p>
+        </div>
+        <div class="media-item">
+          <video src="video4.mp4" controls></video>
+          <p>Caption for Video 1</p>
+        </div>
+        <div class="media-item">
+          <video src="video5.mp4" controls></video>
+          <p>Caption for Video 1</p>
+        </div>
+        <div class="media-item">
+          <video src="video6.mp4" controls></video>
+          <p>Caption for Video 1</p>
+        </div>
+        <div class="media-item">
+          <video src="video7.mp4" controls></video>
+          <p>Caption for Video 1</p>
+        </div>
+        <div class="media-item">
+          <video src="video8.mp4" controls></video>
+          <p>Caption for Video 1</p>
+        </div>
+        <div class="media-item">
+          <video src="video9.mp4" controls></video>
+          <p>Caption for Video 1</p>
+        </div>
+        <div class="media-item">
+          <video src="video10.mp4" controls></video>
+          <p>Caption for Video 1</p>
+        </div>
+        <div class="media-item">
+          <video src="video11.mp4" controls></video>
+          <p>Caption for Video 1</p>
+        </div>
+        <div class="media-item">
+          <video src="video12.mp4" controls></video>
+          <p>Caption for Video 1</p>
+        </div>
+        <div class="media-item">
+          <video src="video13.mp4" controls></video>
+          <p>Caption for Video 1</p>
+        </div>
+        <div class="media-item">
+          <video src="video14.mp4" controls></video>
+          <p>Caption for Video 1</p>
+        </div>
+        <div class="media-item">
+          <video src="video15.mp4" controls></video>
+          <p>Caption for Video 1</p>
+        </div>
+        <div class="media-item">
+          <video src="video16.mp4" controls></video>
+          <p>Caption for Video 1</p>
+        </div>
+        <div class="media-item">
+          <video src="video17.mp4" controls></video>
+          <p>Caption for Video 1</p>
+        </div>
+        <div class="media-item">
+          <video src="video18.mp4" controls></video>
+          <p>Caption for Video 1</p>
+        </div>
+        <div class="media-item">
+          <video src="video19.mp4" controls></video>
+          <p>Caption for Video 1</p>
+        </div>
+        <div class="media-item">
+          <video src="video20.mp4" controls></video>
+          <p>Caption for Video 1</p>
+        </div>
+        <div class="media-item">
+          <video src="video21.mp4" controls></video>
+          <p>Caption for Video 1</p>
+        </div>
+        <div class="media-item">
+          <video src="video23.mp4" controls></video>
+          <p>Caption for Video 1</p>
+        </div>
+        <div class="media-item">
+          <video src="video24.mp4" controls></video>
+          <p>Caption for Video 1</p>
+        </div>
+        <div class="media-item">
+          <video src="video25.mp4" controls></video>
+          <p>Caption for Video 1</p>
+        </div>
+        <div class="media-item">
+          <video src="video26.mp4" controls></video>
+          <p>Caption for Video 1</p>
+        </div>
+         <div class="media-item">
+          <video src="video27.mp4" controls></video>
+          <p>Caption for Video 1</p>
+        </div>
+         <div class="media-item">
+          <video src="video28.mp4" controls></video>
+          <p>Caption for Video 1</p>
+        </div>
+         <div class="media-item">
+          <video src="video29.mp4" controls></video>
+          <p>Caption for Video 1</p>
+        </div>
+         <div class="media-item">
+          <video src="video30.mp4" controls></video>
+          <p>Caption for Video 1</p>
+        </div>
+         <div class="media-item">
+          <video src="video31.mp4" controls></video>
+          <p>Caption for Video 1</p>
+        </div>
+         <div class="media-item">
+          <video src="video32.mp4" controls></video>
+          <p>Caption for Video 1</p>
+        </div>
+        <div class="media-item">
+          <video src="video33.mp4" controls></video>
+          <p>Caption for Video 1</p>
+        </div>
+        <div class="media-item">
+          <video src="video34.mp4" controls></video>
+          <p>Caption for Video 1</p>
+        </div>
+      </div>
+
+      <!-- Images -->
+      <div class="media-grid">
+        <div class="media-item">
+          <img src="image2.jpg" alt="Image 2">
+          <p>Caption for Image 2</p>
+        </div>
+        <div class="media-item">
+          <img src="image3.jpg" alt="Image 3">
+          <p>Caption for Image 3</p>
+        </div>
+        <div class="media-item">
+          <img src="image4.jpg" alt="Image 4">
+          <p>Caption for Image 4</p>
+        </div>
+        <div class="media-item">
+          <img src="image5.jpg" alt="Image 5">
+          <p>Caption for Image 5</p>
+        </div>
+        <div class="media-item">
+          <img src="image6.jpg" alt="Image 6">
+          <p>Caption for Image 6</p>
+        </div>
+        <div class="media-item">
+          <img src="image7.jpg" alt="Image 7">
+          <p>Caption for Image 7</p>
+        </div>
+        <div class="media-item">
+          <img src="image8.jpg" alt="Image 8">
+          <p>Caption for Image 8</p>
+        </div>
+        <div class="media-item">
+          <img src="image9.jpg" alt="Image 9">
+          <p>Caption for Image 9</p>
+        </div>
+        <div class="media-item">
+          <img src="image10.jpg" alt="Image 10">
+          <p>Caption for Image 10</p>
+        </div>
+        <div class="media-item">
+          <img src="image11.jpg" alt="Image 11">
+          <p>Caption for Image 11</p>
+        </div>
+        <div class="media-item">
+          <img src="image12.jpg" alt="Image 12">
+          <p>Caption for Image 12</p>
+        </div>
+        <div class="media-item">
+          <img src="image13.jpg" alt="Image 13">
+          <p>Caption for Image 13</p>
+        </div>
+        <div class="media-item">
+          <img src="image14.jpg" alt="Image 14">
+          <p>Caption for Image 14</p>
+        </div>
+        <div class="media-item">
+          <img src="image15.jpg" alt="Image 15">
+          <p>Caption for Image 15</p>
+        </div>
+        <div class="media-item">
+          <img src="image16.jpg" alt="Image 16">
+          <p>Caption for Image 16</p>
+        </div>
+        <div class="media-item">
+          <img src="image17.jpg" alt="Image 17">
+          <p>Caption for Image 17</p>
+        </div>
+        <div class="media-item">
+          <img src="image18.jpg" alt="Image 18">
+          <p>Caption for Image 18</p>
+        </div>
+        <div class="media-item">
+          <img src="image19.jpg" alt="Image 19">
+          <p>Caption for Image 19</p>
+        </div>
+        <div class="media-item">
+          <img src="image20.jpg" alt="Image 20">
+          <p>Caption for Image 20</p>
+        </div>
+        <div class="media-item">
+          <img src="image21.jpg" alt="Image 21">
+          <p>Caption for Image 21</p>
+        </div>
+        <div class="media-item">
+          <img src="image22.jpg" alt="Image 22">
+          <p>Caption for Image 22</p>
+        </div>
+        <div class="media-item">
+          <img src="image23.jpg" alt="Image 23">
+          <p>Caption for Image 23</p>
+        </div>
+        <div class="media-item">
+          <img src="image24.jpg" alt="Image 24">
+          <p>Caption for Image 24</p>
+        </div>
+        <div class="media-item">
+          <img src="image25.jpg" alt="Image 25">
+          <p>Caption for Image 25</p>
+        </div>
+        <div class="media-item">
+          <img src="image26.jpg" alt="Image 26">
+          <p>Caption for Image 26</p>
+        </div>
+        <div class="media-item">
+          <img src="image27.jpg" alt="Image 27">
+          <p>Caption for Image 27</p>
+        </div>
+        <div class="media-item">
+          <img src="image28.jpg" alt="Image 28">
+          <p>Caption for Image 28</p>
+        </div>
+        <div class="media-item">
+          <img src="image29.jpg" alt="Image 29">
+          <p>Caption for Image 29</p>
+        </div>
+        <div class="media-item">
+          <img src="image30.jpg" alt="Image 30">
+          <p>Caption for Image 30</p>
+        </div>
+      </div>      
+    </section>
+  </main>
+</body>
+</html>
+
